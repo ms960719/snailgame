@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="700.0" prefWidth="750.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.GameController">
+   <children>
+      <ImageView fitHeight="450.0" fitWidth="750.0" layoutX="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nail6.jpg" />
+         </image>
+      </ImageView>
+      <Button fx:id="gameBtnStart" layoutX="261.0" layoutY="407.0" mnemonicParsing="false" text="게임시작" />
+      <ImageView fx:id="gameImg1" fitHeight="51.0" fitWidth="80.0" layoutX="17.0" layoutY="216.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nail1.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gameImg2" fitHeight="51.0" fitWidth="80.0" layoutX="17.0" layoutY="281.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nail2.jpg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="gameImg3" fitHeight="51.0" fitWidth="80.0" layoutX="17.0" layoutY="346.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/nail3.jpg" />
+         </image>
+      </ImageView>
+      <Label fx:id="gameLabName" alignment="CENTER" layoutX="14.0" layoutY="459.0" prefHeight="20.0" prefWidth="67.0" />
+      <Label alignment="CENTER" layoutX="84.0" layoutY="459.0" prefHeight="20.0" prefWidth="103.0" text="님 환영합니다." />
+      <Separator layoutX="195.0" layoutY="450.0" orientation="VERTICAL" prefHeight="250.0" prefWidth="7.0" />
+      <Separator layoutX="1.0" layoutY="486.0" prefHeight="2.0" prefWidth="196.0" />
+      <Label fx:id="gameLabMysc" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="549.0" prefHeight="20.0" prefWidth="80.0" />
+      <Separator layoutX="365.0" layoutY="450.0" orientation="VERTICAL" prefHeight="250.0" prefWidth="7.0" />
+      <Label alignment="CENTER" layoutX="232.0" layoutY="458.0" prefHeight="29.0" prefWidth="103.0" text="1등예상">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="500.0" layoutY="458.0" prefHeight="29.0" prefWidth="103.0" text="순위예상">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="64.0" layoutY="527.0" prefHeight="20.0" prefWidth="67.0" text="내 점수" />
+      <Label alignment="CENTER" layoutX="114.0" layoutY="549.0" prefHeight="20.0" prefWidth="28.0" text="점" />
+      <Label alignment="CENTER" layoutX="114.0" layoutY="619.0" prefHeight="20.0" prefWidth="28.0" text="점" />
+      <Label alignment="CENTER" layoutX="64.0" layoutY="589.0" prefHeight="20.0" prefWidth="67.0" text="상대 점수" />
+      <Button fx:id="gameBtnExit" layoutX="395.0" layoutY="407.0" mnemonicParsing="false" text="나가기" />
+      <fx:define>
+			<ToggleGroup fx:id="group" />
+		</fx:define>
+      <RadioButton fx:id="gameRdo1" layoutX="229.0" layoutY="515.0" mnemonicParsing="false" text="네 달팽이" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo2" layoutX="229.0" layoutY="565.0" mnemonicParsing="false" text="임 달팽이" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo3" layoutX="229.0" layoutY="615.0" mnemonicParsing="false" text="드 달팽이" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo4" layoutX="389.0" layoutY="505.0" mnemonicParsing="false" text="네임드" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo5" layoutX="509.0" layoutY="505.0" mnemonicParsing="false" text="네드임" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo6" layoutX="629.0" layoutY="505.0" mnemonicParsing="false" text="드네임" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo9" layoutX="629.0" layoutY="555.0" mnemonicParsing="false" text="임드네" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo8" layoutX="509.0" layoutY="555.0" mnemonicParsing="false" text="임네드" toggleGroup="$group" />
+      <RadioButton fx:id="gameRdo7" layoutX="389.0" layoutY="555.0" mnemonicParsing="false" text="드임네" toggleGroup="$group" />
+      <Label fx:id="gameLabFirst" alignment="CENTER" layoutX="277.0" layoutY="146.0" prefHeight="39.0" prefWidth="52.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameLabSecond" alignment="CENTER" layoutX="347.0" layoutY="146.0" prefHeight="39.0" prefWidth="52.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameLabThird" alignment="CENTER" layoutX="417.0" layoutY="146.0" prefHeight="39.0" prefWidth="52.0">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Label>
+      <Label fx:id="gameLabOthersc" alignment="CENTER_RIGHT" layoutX="34.0" layoutY="619.0" prefHeight="20.0" prefWidth="80.0" />
+      <TextArea fx:id="gameTxtArea" layoutX="372.0" layoutY="600.0" prefHeight="94.0" prefWidth="372.0" />
+      <Separator layoutX="371.0" layoutY="592.0" prefHeight="3.0" prefWidth="378.0" />
+   </children>
+</AnchorPane>

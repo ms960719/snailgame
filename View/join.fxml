@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="450.0" prefWidth="400.0" style="-fx-background-color: lightgreen;" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.JoinController">
+   <children>
+      <Label alignment="CENTER" layoutX="93.0" layoutY="21.0" prefHeight="53.0" prefWidth="215.0" text="JOIN">
+         <font>
+            <Font size="49.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="70.0" layoutY="100.0" prefHeight="38.0" prefWidth="261.0" text="NICKNAME (최대 5글자)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <TextField fx:id="joinTxtName" layoutX="114.0" layoutY="138.0" prefHeight="38.0" prefWidth="172.0" promptText="닉네임을 입력하세요" />
+      <Button fx:id="joinBtnOverlab" layoutX="297.0" layoutY="143.0" mnemonicParsing="false" text="중복확인" />
+      <Button fx:id="joinBtnJoin" layoutX="120.0" layoutY="388.0" mnemonicParsing="false" text="가입" />
+      <Button fx:id="joinBtnCancel" layoutX="229.0" layoutY="388.0" mnemonicParsing="false" text="취소" />
+      <Label alignment="CENTER" layoutX="70.0" layoutY="180.0" prefHeight="38.0" prefWidth="261.0" text="PASSWORD (4자리 이상)">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="joinTxtPassword" layoutX="114.0" layoutY="216.0" prefHeight="38.0" prefWidth="172.0" promptText="비밀번호를 입력하세요" />
+      <Label alignment="CENTER" layoutX="70.0" layoutY="264.0" prefHeight="38.0" prefWidth="261.0" text="RE-ENTER PASSWORD">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="joinTxtRepassword" layoutX="114.0" layoutY="296.0" prefHeight="38.0" prefWidth="172.0" promptText="비밀번호를 입력하세요" />
+   </children>
+</AnchorPane>

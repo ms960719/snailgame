@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane prefHeight="500.0" prefWidth="500.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="Controller.HowController">
+   <children>
+      <Label layoutX="22.0" layoutY="88.0" prefHeight="31.0" prefWidth="419.0" text="1. 플레이어 2명이 모이면 자동으로 게임이 시작된다." />
+      <Label layoutX="22.0" layoutY="128.0" prefHeight="31.0" prefWidth="419.0" text="2. 자신의 차례가 되면 레이싱 예상 결과를 체크한다." />
+      <Label alignment="CENTER" layoutX="59.0" layoutY="8.0" prefHeight="31.0" prefWidth="382.0" text="게임방법">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Label>
+      <Label layoutX="22.0" layoutY="168.0" prefHeight="31.0" prefWidth="466.0" text="3. 모두 체크하면 두번째로 체크한 플레이어가 시작버튼을 누른다." />
+      <Label layoutX="22.0" layoutY="208.0" prefHeight="31.0" prefWidth="466.0" text="4. 레이싱 종료 후 예상결과가 일치하면 점수를 획득한다." />
+      <Label layoutX="22.0" layoutY="248.0" prefHeight="31.0" prefWidth="466.0" text="5. 1등예측을 맞추면 1점, 순위예측을 맞추면 3점을 얻는다." />
+      <Label layoutX="22.0" layoutY="288.0" prefHeight="31.0" prefWidth="466.0" text="6. 예상결과가 틀릴경우, 1점을 잃게된다." />
+      <Label layoutX="22.0" layoutY="328.0" prefHeight="31.0" prefWidth="466.0" text="7. 점수가 5점이 되면 승리, -3점이 되면 패배한다." />
+      <Label layoutX="22.0" layoutY="368.0" prefHeight="31.0" prefWidth="466.0" text="8. 승리조건 혹은 패배조건을 동시에 달성하면 무승부가 된다." />
+   </children>
+</AnchorPane>

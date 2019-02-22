@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="504.0" prefWidth="307.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.RootController">
+   <children>
+      <ImageView fitHeight="500.0" fitWidth="400.0" layoutX="3.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/snail6.jpg" />
+         </image></ImageView>
+      <Button fx:id="mainBtnJoin" layoutX="128.0" layoutY="378.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="회원가입">
+         <font>
+            <Font name="MS Gothic" size="15.0" />
+         </font></Button>
+      <Button fx:id="mainBtnLogin" layoutX="128.0" layoutY="418.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="로그인" />
+      <Button fx:id="mainBtnExit" layoutX="128.0" layoutY="458.0" mnemonicParsing="false" prefHeight="30.0" prefWidth="90.0" text="나가기" />
+   </children>
+</AnchorPane>
